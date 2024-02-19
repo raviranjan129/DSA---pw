@@ -1,6 +1,7 @@
-let arr = [2,5,7,9,11,45];
+let arr = [2,5,7,8,3,11,45];
 let target = 9;
 
+arr.sort(function(a,b) {return a-b}); //  arr.sort is used to sort the given array bcz two pointer works on sorted array ;
 let left = 0;
 let right= arr.length-1;
 
