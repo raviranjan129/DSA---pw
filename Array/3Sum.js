@@ -28,6 +28,7 @@ let j= nums.length-1;
                 }
 
                 i++ ;
+                j--;
                
             }
             else if(nums[i]+nums[j] > -nums[c]){
