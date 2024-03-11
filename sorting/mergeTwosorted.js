@@ -15,7 +15,7 @@ let n = nums2.length;
                 k++;
                 i++;
             }
-            else{
+            else{ 
                 result[k] = nums2[j];
                 k++;
                 j++;
