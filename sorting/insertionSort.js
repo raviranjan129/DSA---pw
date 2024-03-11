@@ -1,4 +1,10 @@
 
+
+/**
+ * 
+ * space:O(1);
+ * Time complexity: O(n^2); 
+ */
 let sortArray = function (nums){
     
     let n = nums.length-1;
@@ -9,11 +15,12 @@ let sortArray = function (nums){
         if(nums[j]>element){
             nums[j+1]=nums[j];   
           
-        }else{ 
+        }
+        else{ 
               // nums[j] <= element;
             break;
         }
-       }
+       } 
        nums[j+1]=element;
     }
     
