@@ -7,6 +7,7 @@ let bubbleSort = function (nums){
 
            for(let j = 0 ; j< n-i-1; j++){  //j<n-i-1 , bcz in every iteration we push the biggest elem at the last so no need to copmare that;
             if(nums[j]>nums[j+1]){
+                // adjacent element swapping ;
                 let temp = nums[j];
                 nums[j]=nums[j+1];
                 nums[j+1]=temp;
