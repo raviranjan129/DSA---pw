@@ -14,6 +14,7 @@ const lowerbound =  function (nums,target){
                   }
                  else{
                   ans = mid;
+                  
                   high = mid-1;
                  }
     }
@@ -22,6 +23,6 @@ const lowerbound =  function (nums,target){
     
  }
 
- const nums=[1,2,2,4,5];
+ const nums=[1,2,2,4,6];
 
- console.log(lowerbound(nums,4))
+ console.log(lowerbound(nums,2))
