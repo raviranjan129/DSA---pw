@@ -1,4 +1,5 @@
 
+//Given an sorted array A of size N. Find number of elements which are less than or equal to B.
 
 const smallerORequal = function(nums,target){
      let low=0;
