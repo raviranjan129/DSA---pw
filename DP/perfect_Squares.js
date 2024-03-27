@@ -25,7 +25,7 @@ function f(square) {
 if(ans == Number.MAX_SAFE_INTEGER){
     return dp[square]=Number.MAX_SAFE_INTEGER;
 }else{
-    return dp[square] = 1 + ans;
+    return dp[square] = 1 + ans;  // +1 is for reaching the all possibilities;
 }
     
 }
