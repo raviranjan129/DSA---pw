@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * Time complexity = O(q);
+ * space complexity =O(q);
+ */
 
 const calpower = function(p,q){
 
