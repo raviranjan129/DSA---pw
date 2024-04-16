@@ -59,5 +59,5 @@ let asteroidCollision = function(a){
 
 // let a= [5,10,-5];
 
- let a = [8,-8];
+ let a = [-2,-1,-1,2];
 console.log(asteroidCollision(a));
