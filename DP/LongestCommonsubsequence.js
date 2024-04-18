@@ -30,6 +30,6 @@ const longestCommonSubsequence = function(text1,text2){
 const text1="abcde";
 // const text1="abcdftuy";
 // const text2="abcyd";
-const text2="abcyd";
+const text2="abd";
 
 console.log(longestCommonSubsequence(text1,text2));
