@@ -16,6 +16,7 @@ class stack {
     }
     isEmpty() {
         return this.#arr.length == 0;
+        
     }
 }
 
