@@ -98,41 +98,84 @@ class DoublylinkedList {
             this.tail = newTail;
         }
     }
-    display(){
-        //head to tail;
-        let temp = this.head;
+    // display() {
+    //     //head to tail;
+    //     let temp = this.head;
 
-        while(temp!=null){
+    //     while (temp != null) {
+    //         console.log(temp.data);
+    //         temp = temp.next;
+    //     }
+
+
+    //     console.log("*********"); //seperator;
+    //     //tail to head
+
+    //     temp = this.tail;
+    //     while (temp != null) {
+    //         console.log(temp.data);
+    //         temp = temp.prev;
+    //     }
+    // }
+}
+
+class Deque {
+    constructor() {
+        this.DLL = new DoublylinkedList();
+    }
+
+    addAtFront(data) {
+        this.DLL.addAtHead(data);
+    }
+    addAtBack(data) {
+        this.DLL.addAtTail(data);
+    }
+    remveAtFront() {
+        this.DLL.removeAtHead();
+    }
+    removeAtBack() {
+        this.DLL.removeAtTail();
+    }
+    getBack() {
+        if (this.DLL.tail) {
+            return this.DLL.tail.data;
+        }
+
+    }
+    getFront() {
+        if (this.DLL.head) {
+            return this.DLL.head.data;
+        }
+    }
+    display() {
+        let temp = this.DLL.head;
+    
+        // Displaying from head to tail
+        while (temp !== null) {
             console.log(temp.data);
             temp = temp.next;
         }
-
-
-        console.log("*********"); //seperator;
-        //tail to head
-
-        temp = this.tail;
-        while(temp != null){
+    
+        console.log("*********"); //separator
+    
+        // Displaying from tail to head
+        temp = this.DLL.tail;
+        while (temp !== null) {
             console.log(temp.data);
-            temp=temp.prev;
+            temp = temp.prev;
         }
     }
+    
 }
 
-const Dll = new DoublylinkedList();
+const Dq = new Deque();
 
-Dll.addAtHead(10);
-Dll.addAtHead(9);
-Dll.addAtHead(8);
+Dq.addAtFront(1);
+Dq.addAtFront(2);
+Dq.addAtFront(3);
 
+Dq.addAtBack(7);
+Dq.addAtBack(8);
+Dq.addAtBack(9);
 
-
-
-
-Dll.addAtTail(11);
-Dll.addAtTail(12);
-
-
-
-
-Dll.display();
+Dq.display();
