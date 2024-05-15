@@ -14,7 +14,7 @@ class LInkedlist{
     }
 
     isEmpty(){
-        return this.head=null;
+        return this.head==null;
     }
     getHead(){
         if(this.head == null){
